@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-+nce5!gg8_%)hr^24amy!dmr@-@f$nr)tj_aoaw$6gn=l31sx7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["patient-management-y8cr.onrender.com"]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'patient-management-y8cr.onrender.com']
 
 
 # Application definition
@@ -61,7 +61,7 @@ ROOT_URLCONF = 'patient_management.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "patients" / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
